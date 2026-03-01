@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS public.survey_responses (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  industry TEXT NOT NULL,
+  company_size TEXT NOT NULL,
+  priority_1_id TEXT NOT NULL,
+  priority_1_name TEXT NOT NULL,
+  priority_1_zone TEXT NOT NULL,
+  priority_2_id TEXT NOT NULL,
+  priority_2_name TEXT NOT NULL,
+  priority_2_zone TEXT NOT NULL,
+  priority_3_id TEXT NOT NULL,
+  priority_3_name TEXT NOT NULL,
+  priority_3_zone TEXT NOT NULL,
+  priority_4_id TEXT NOT NULL,
+  priority_4_name TEXT NOT NULL,
+  priority_4_zone TEXT NOT NULL,
+  priority_5_id TEXT NOT NULL,
+  priority_5_name TEXT NOT NULL,
+  priority_5_zone TEXT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT now()
+);
